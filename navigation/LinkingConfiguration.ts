@@ -9,11 +9,14 @@ import * as Linking from 'expo-linking';
 
 import { RootStackParamList } from '../types';
 
+const URL_PREFIX = 'app';
+
 const linking: LinkingOptions<RootStackParamList> = {
-  prefixes: [Linking.makeUrl('/')],
+  prefixes: [Linking.makeUrl(URL_PREFIX)],
   config: {
     screens: {
       Root: {
+        path: URL_PREFIX,
         screens: {
           TabOne: {
             screens: {
@@ -27,8 +30,8 @@ const linking: LinkingOptions<RootStackParamList> = {
           },
         },
       },
-      Modal: 'modal',
-      NotFound: '*',
+      Modal: `${URL_PREFIX}/modal`,
+      NotFound: `${URL_PREFIX}/*`,
     },
   },
 };
