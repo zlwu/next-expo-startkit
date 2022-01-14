@@ -10,3 +10,4 @@
 
 ## TODO
  1. Amplify integration [Amplify for Next.js](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/)
+ 2. Firebase Analytics
