@@ -7,3 +7,6 @@
  2. Notes
    - Pages under http://localhost:3000/app are cross-platform expo react-native code.
    - Please prefix the route path with URL_PREFIX under navigation/LinkConfigurations.ts. 
+
+## TODO
+ 1. Amplify integration [Amplify for Next.js](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/)
