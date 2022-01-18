@@ -1,4 +1,14 @@
+import { StatusBar } from "expo-status-bar";
+import useColorScheme from "../../hooks/useColorScheme";
+import Navigation from "../../navigation";
 
-import App from '../../App'
+export default function App() {
+  const colorScheme = useColorScheme();
 
-export default App
+  return (
+    <>
+      <Navigation colorScheme={colorScheme} />
+      <StatusBar />
+    </>
+  );
+}
